@@ -4,14 +4,11 @@ from sets import Set
 rl = lambda: sys.stdin.readline()
 n = int(rl())
 for i in range(n):
-    points = []
-    for i in range(3):
-        line = rl()
-        points.append(line.split())
-
     resultX = Set()
     resultY = Set()
-    for point in points:
+    for i in range(3):
+        line = rl()
+        point = line.split()
         x = point[0]
         y = point[1]
         if x in resultX:
