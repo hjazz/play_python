@@ -1,7 +1,6 @@
 for i in range(int(raw_input())):
     line = raw_input()
-    info = line.split()
-    in_str = info[1]
-    in_idx = int(info[0])
-    print i+1, in_str[0:in_idx-1] + in_str[in_idx:]
+    n, s = line.split()
+    n = int(n)
+    print i+1, s[0:n-1] + s[n:]
     
